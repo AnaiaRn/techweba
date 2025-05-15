@@ -1,7 +1,15 @@
-export default function Boutton () {
-    return (
-        <>
-          <button className="w-[170px] h-9 bg-gray-950 rounded-lg"></button>
-        </>
-    )
+import { ReactNode } from "react";
+
+export default function Boutton({
+  label,
+  icon,
+}: {
+  label: string;
+  icon: ReactNode;
+}) {
+  return (
+    <button className="w-[300px] h-9 bg-gray-950 text-white rounded-lg flex items-center justify-center gap-2">
+      {label}  {icon}
+    </button>
+  );
 }
