@@ -15,8 +15,8 @@ export default function Cart() {
                 <div className="space-y-2 lg:flex lg:flex-row-reverse lg:justify-center">
                     {/* Summary */}
                     <div className="flex justify-center lg:ml-[40px]">
-                        <div className="w-[80%] h-[450px] lg:w-[600px] lg:h-[500px] lg:space-y-6 bg-white rounded-2xl mt-4 shadow">
-                            <h1 className="font-bold text-xl lg:text-2xl mt-4 ml-4">Summary</h1>
+                        <div className="w-[80%] h-[450px] lg:w-[600px] lg:h-[480px] lg:space-y-6 bg-white rounded-2xl mt-4 shadow">
+                            <h1 className="font-bold text-xl lg:text-xl mt-4 ml-4">Summary</h1>
                             <div className="text-gray-700 text-sm lg:text-xl space-y-8">
                                 <div className="flex justify-between mt-4">
                                     <p className="ml-4">Subtotal</p>
@@ -68,7 +68,7 @@ export default function Cart() {
                                         <p className="text-[15px]">Nike Airforce premium</p>
                                     </div>
                                     {/* Compteur */}
-                                    <div>
+                                    <div className="mt-5">
                                         <Compteur />
                                     </div>
                                     <div className="text-gray-700 font-semibold">
@@ -94,7 +94,7 @@ export default function Cart() {
                                         <p className="text-[15px]">Nike Airforce premium</p>
                                     </div>
                                     {/* Compteur */}
-                                    <div>
+                                    <div className="mt-5">
                                         <Compteur />
                                     </div>
                                     <div className="text-gray-700 font-semibold">

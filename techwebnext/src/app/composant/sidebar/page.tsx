@@ -4,7 +4,7 @@ import React from "react";
 export default function Sidebar () {
     return (
         <>
-            <div className="flex justify-between items-center w-full h-[65px] border-gray-200 border-1">
+            <div className="flex justify-between items-center w-full h-[65px] bg-white border-gray-200 border-1">
                 {/* TITRE & LOGO */}
                 <div className="flex space-x-2">
                     <div> 
