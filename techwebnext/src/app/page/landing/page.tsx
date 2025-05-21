@@ -5,11 +5,11 @@ import Footer from "@/app/composant/footer/page";
 
 export default function Landing() {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="flex flex-col min-h-screen  overflow-y-auto lg:overflow-hidden">
             <Sidebar />
 
             {/* Contenu principal */}
-            <div className="flex-1">
+            <div className="flex-grow w-full">
                 {/* Bannière de pub */}
                 <div className="flex justify-center items-center mt-8">
                     <div className="w-[80%] h-[450px] bg-gray-200 lg:w-[70%] lg:h-[250px] rounded-2xl">
@@ -18,7 +18,7 @@ export default function Landing() {
                                 <img src="/image/6.png" alt="" className="w-72 lg:w-[350px]h-auto " />
                             </div>
                             <div className="space-y-5 text-center lg:ml-70">
-                                <p className="text-orange-600 font-semibold text-2xl">25% OFF</p>
+                                <p className="text-orange-600 font-semibold text-2xl lg:text-3xl">25% OFF</p>
                                 <p className="font-semibold text-3xl">Summer Sale</p>
                                 <p className="text-gray-500">Discover our summer styles with discount</p>
                                 <div className="flex justify-center items-center text-white font-semibold">
@@ -29,12 +29,12 @@ export default function Landing() {
                     </div>
                 </div>
 
-                <div className="ml-11 mt-2 lg:ml-72">
-                    <p className="font-semibold text-xl">Explore our latest drops :</p>
+                <div className="ml-11 mt-8 lg:ml-72">
+                    <p className="font-semibold text-2xl">Explore our latest drops :</p>
                 </div>
 
                 {/* Liste des produits */}
-                <div className="mt-2 flex overflow-x-auto whitespace-nowrap lg:justify-center lg:space-x-14 lg:mr-10">
+                <div className="mt-4 flex overflow-x-auto whitespace-nowrap lg:justify-center lg:space-x-14 lg:mr-10">
                     {/* Produit x4 */}
                     {[1, 2, 3, 4].map((id, i) => (
                         <div key={i} className="ml-11 inline-block object-cover space-y-1">
@@ -52,9 +52,11 @@ export default function Landing() {
             </div>
 
             {/* Footer toujours en bas */}
-           <div className="mt-10">
-            <Footer />
+          
+           <div className="mt-20 lg:mt-0">
+           <Footer />
            </div>
+           
         </div>
     );
 }

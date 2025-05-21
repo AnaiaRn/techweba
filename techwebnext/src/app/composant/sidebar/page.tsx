@@ -1,6 +1,7 @@
 import { AiOutlineShopping } from "react-icons/ai"; 
 import React from "react";
 
+
 export default function Sidebar () {
     return (
         <>
@@ -18,7 +19,7 @@ export default function Sidebar () {
                 {/* VIEW CART*/}
                 <div className="flex justify-center items-center pt-1 pr-5 pl-1 pb-1  space-x-2 border-1 rounded-lg mr-4">
                     <AiOutlineShopping className="ml-2 text-xl"/> 
-                    <p className="font-semibold text-[15px]">View Cart</p>
+                    <a href="" className="font-semibold text-[15px]">View Cart</a>
                 </div>
             </div> 
         </>

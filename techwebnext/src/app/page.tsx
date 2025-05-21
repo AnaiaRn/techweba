@@ -7,7 +7,9 @@ import Details from "./page/details/page";
 export default function Home() {
   return (
    <>
-  <Details />
+  {/* <Details /> */}
+  {/* <Landing /> */}
+  <Cart />
    </>
   );
 }
